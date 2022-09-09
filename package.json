@@ -1,0 +1,24 @@
+{
+  "name": "harceli",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Monitor changes in files and react to them in the way you need.",
+  "main": "lib/harceli.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "harceli": "./lib/harceli.js"
+  },
+  "keywords": [
+    "monitor",
+    "cli",
+    "restart",
+    "reload"
+  ],
+  "author": "Maciej Oliwa",
+  "license": "MIT"
+}
