@@ -1,9 +1,9 @@
 {
   "name": "harceli",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Monitor changes in files and react to them in the way you need.",
-  "main": "lib/harceli.js",
+  "main": "./lib/harceli",
   "directories": {
     "lib": "lib"
   },
@@ -12,6 +12,9 @@
   },
   "bin": {
     "harceli": "./lib/harceli.js"
+  },
+  "engines": {
+    "node": ">=8.10.0"
   },
   "keywords": [
     "monitor",
