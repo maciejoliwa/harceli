@@ -1,7 +1,7 @@
 {
   "name": "harceli",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Monitor changes in files and react to them in the way you need.",
   "main": "./lib/harceli",
   "directories": {
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "harceli": "node ./lib/harceli.js"
+    "harceli": "./lib/harceli.js"
   },
   "engines": {
     "node": ">=8.10.0"
