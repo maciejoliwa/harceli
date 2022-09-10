@@ -1,0 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: translateY(-5px);
+}

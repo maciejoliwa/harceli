@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./global.css">
+    <title>Harceli - Monitor your files with ease</title>
+</head>
+<body>
+    <div class="container-full ">
+        <section class="docs p-8 pb-8">
+            <h2 class="text-4xl font-bold">Getting Started</h2>
+            <h3 class="text-3xl mt-2">Installation</h3>
+            <div class="instructions mt-4">
+
+                <p>First off, launch your terminal and put in:</p>
+                <code class="p-2 block w-64 bg-gray-700 text-white mt-2">
+                    npm i -g harceli
+                </code>
+                <p>Wait for the library to install.</p>
+            </div>
+            <h3 class="text-3xl mt-4">Usage</h3>
+            <div class="instructions mt-4">
+                <p>Now, in your project's directory create <span class="font-bold text-yellow-500">harceli.config.json</span></p>
+                <p>Fill it with this content:</p>
+                <code class="p-2 block bg-gray-700 text-white mt-2">
+                    {<br>
+                    "watched": [<br>
+                        { "files": ["test1.js", "test2.js"], "on_write": "echo files changed!" },<br>
+                        { "files": "app.py", "on_write": "echo python file changed!" }
+                    <br>]<br>
+                    }
+                </code>
+                <p class="mt-2">
+                    Take note, that the <span class="font-bold text-yellow-500">files</span> property can point either to an array of strings, or to a string.
+                </p>
+                <p>
+                    Run the <code>harceli</code> command and make changes to the files in your directory. You should see <span class="font-bold text-yellow-500">on_write</span> commands getting called
+                    everytime you change and save the file!
+                </p>
+                <p>
+                    Of course, there are many things you can do using this system. For example you could execute a python/node.js script everytime you change one of your files. You can automatically
+                    add them to git and many more!
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
