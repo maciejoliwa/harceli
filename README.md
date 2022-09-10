@@ -14,7 +14,14 @@ Example:
 ```json
 {
     "watched": [
-        { "files": ["exampleFile.js"], "on_write": "echo test!"}
+        {
+            "files": ["exampleFile.js"],
+            "on_write": "echo test!"
+        },
+        { 
+            "files": "test.js",
+            "on_write": "node path/to/epic/node_file.js"
+        }
     ]
 }
 ```
