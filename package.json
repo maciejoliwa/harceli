@@ -1,8 +1,8 @@
 {
   "name": "harceli",
   "type": "module",
-  "version": "0.1.4",
-  "homepage": "https://github.com/maciejoliwa/harceli",
+  "version": "0.1.5",
+  "homepage": "https://maciejoliwa.github.io/harceli/",
   "repository": { "url": "https://github.com/maciejoliwa/harceli" },
   "description": "Monitor changes in files and react to them in the way you need.",
   "main": "./lib/harceli",
